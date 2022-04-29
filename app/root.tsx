@@ -8,13 +8,13 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { NavigationBar } from "./components/Navigation";
-import style from "./styles/appstyles.css"
+import appstyle from "./styles/appstyles.css"
 
 export const links: LinksFunction = () => {
   return [
     {
       rel: 'stylesheet',
-      href: style
+      href: appstyle
     }
   ]
 }

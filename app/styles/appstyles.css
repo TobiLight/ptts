@@ -708,26 +708,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1rem;
 }
 
-.w-\[200px\]{
-  width: 200px;
-}
-
-.w-auto{
-  width: auto;
-}
-
-.w-11\/12{
-  width: 91.666667%;
-}
-
 .w-\[150px\]{
   width: 150px;
 }
 
-.w-max{
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+.w-auto{
+  width: auto;
 }
 
 .w-\[80px\]{
@@ -740,10 +726,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-2xl{
   max-width: 42rem;
-}
-
-.max-w-\[200px\]{
-  max-width: 200px;
 }
 
 .max-w-xl{
@@ -887,16 +869,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 50px;
 }
 
-.p-3{
-  padding: 0.75rem;
-}
-
 .p-4{
   padding: 1rem;
 }
 
-.p-6{
-  padding: 1.5rem;
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-8{
@@ -912,16 +890,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .py-14{
@@ -943,10 +911,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-20{
   padding-bottom: 5rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
 }
 
 .text-center{
@@ -1049,10 +1013,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px){
-  .sm\:w-full{
-    width: 100%;
-  }
-
   .sm\:p-\[50px\]{
     padding: 50px;
   }
@@ -1070,10 +1030,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:grid{
     display: grid;
-  }
-
-  .md\:w-\[400px\]{
-    width: 400px;
   }
 
   .md\:w-\[300px\]{
@@ -1193,11 +1149,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:py-\[150px\]{
     padding-top: 150px;
     padding-bottom: 150px;
-  }
-
-  .lg\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .lg\:pl-10{
