@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@400;700&family=Nanum+Pen+Script&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .green {
+        @apply text-[#005A31]
+    }
+
+    .mobile-nav-wrapper {
+        @apply bg-secondary min-h-[80px] p-2 flex flex-row items-center justify-between;
+    }
+
+    .menu-icon {
+        @apply w-7 h-7 text-[#fff] cursor-pointer transition-all delay-75 ease-in p-[5px] border rounded border-[#fff];
+    }
+
+    .menu-icon:hover {
+        @apply text-white border-white;
+    }
+
+    .mobile-nav-link-wrapper {
+        @apply bg-black flex flex-col gap-y-3 text-white mx-auto p-3 rounded-bl rounded-br invisible transition-all delay-[.5s] ease-in-out fixed -left-[999px] w-full;
+    }
+
+    .mobile-nav-link-wrapper.show {
+        @apply left-0 visible transition-all;
+    }
+
+    .appointment-link {
+        @apply px-4 py-2 text-black h-full flex items-center bg-[#88de32];
+        /* "to left" / "to right" - affects initial color */
+        background: linear-gradient(to left, #88de32 50%, #272925 50%) right;
+        background-size: 200%;
+        transition: .5s ease-out;
+    }
+
+    .appointment-link:hover {
+        background-position: left;
+        color: white;
+    }
+
+    .link-is-active {
+        @apply bg-secondary rounded-full p-3 text-white font-bold ease-in duration-300;
+    }
+
+    .link-is-active:hover {
+        @apply bg-primary;
+    }
+
+    .link-is-not-active {
+        @apply p-3 text-black font-semibold ease-in duration-300;
+    }
+
+    .link-is-not-active:hover {
+        @apply text-secondary border-b-[3px] pb-0 border-b-secondary rounded-none;
+    }
+
+    .hero-section {
+        @apply flex justify-center items-center min-h-[500px];
+    }
+
+    .hero-bg {
+        background-image: url('../images/hero-bg.jpg');
+        @apply w-full h-[inherit] object-cover
+    }
+
+}
+
+/* Medium screens only */
+@screen md {
+    .mobile-nav-wrapper {
+        @apply hidden
+    }
+}
+
+/* Large screens only */
+@screen lg {
+    .hero-section {
+        @apply justify-start
+    }
+}
