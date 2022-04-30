@@ -94,7 +94,7 @@ export const NavigationBar = (): JSX.Element => {
         <>
             <div className="fixed w-full top-0 z-[1]">
                 <div className="mobile-nav-wrapper">
-                    <h1 className="font-nanum-pen font-bold text-2xl text-white">PleaseTalkToSomebody</h1>
+                    <h1 className="font-nanum-pen font-bold text-2xl text-white">PTTS</h1>
                     <MenuIcon onClick={handleShowMobileNavLink} className="menu-icon" />
                 </div>
 
