@@ -721,6 +721,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 500px;
 }
 
+.h-\[550px\]{
+  height: 550px;
+}
+
 .min-h-\[50px\]{
   min-height: 50px;
 }
@@ -731,6 +735,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-screen{
   min-height: 100vh;
+}
+
+.min-h-\[400px\]{
+  min-height: 400px;
 }
 
 .w-full{

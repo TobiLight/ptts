@@ -2,7 +2,7 @@ import { Form, Link } from '@remix-run/react';
 import heroBg from '../../public/images/hero-bg.jpg'
 import mentalHealthImage from "../../public/images/mental-health.jpg"
 import stigma from "../../public/images/stigma.png"
-import codecamp from "../../public/images/codecamp.jpg"
+import codecamp from "../../public/images/codecamp.jpeg"
 
 export default function Index() {
   return (
@@ -68,7 +68,7 @@ export default function Index() {
           <div className="grid gap-y-[70px]">
             <div className='grid gap-y-3'>
               <p className='font-semibold'>Upcoming events</p>
-              <div className='bg-gray-100 grid justify-between h-[400px]'>
+              <div className='bg-gray-100 grid justify-between min-h-[400px] h-[500px]'>
                 <div>
                   <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
                 </div>
@@ -83,7 +83,7 @@ export default function Index() {
 
             <div className='grid gap-y-3'>
               <p className='font-semibold'>Blog</p>
-              <div className='bg-gray-100 grid justify-between h-[400px]'>
+              <div className='bg-gray-100 grid justify-between min-h-[400px]'>
                 <div>
                   <img src={stigma} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
                 </div>
