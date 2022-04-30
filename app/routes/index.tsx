@@ -1,6 +1,8 @@
 import { Form, Link } from '@remix-run/react';
 import heroBg from '../../public/images/hero-bg.jpg'
 import mentalHealthImage from "../../public/images/mental-health.jpg"
+import stigma from "../../public/images/stigma.png"
+import codecamp from "../../public/images/codecamp.jpg"
 
 export default function Index() {
   return (
@@ -15,9 +17,8 @@ export default function Index() {
               <br />
               <span className='text-[#FFD800] italic font-bold'>mental health</span>
             </h1>
-            <p className="text-white text-xl px-8 sm:px-0 lg:text-2xl">
-              <span className="font-bold">Please Talk To Somebody </span>
-              believes that mental health is a fundamental human right. We aim to make mental health support more accessible for you—from stories and resources that inspire and educate, to professional services, facilities, and more!
+            <p className="text-white text-[18px] px-8 sm:px-0 lg:text-2xl">
+              We are the only non-profit organization that focuses on empowering and communicating with youths and families in every community in Nigeria who need educational, moral, employment and health support to lift themselves out of poverty and become self-reliant.
             </p>
           </div>
         </section>
@@ -58,6 +59,45 @@ export default function Index() {
           </div>
         </section>
 
+        <section className='py-[50px] px-[25px]'>
+          <div className='px-8 pb-14'>
+            <h1 className='text-2xl md:text-4xl font-bold text-center'>View latest</h1>
+            <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[30px]'></span>
+          </div>
+
+          <div className="grid gap-y-[70px]">
+            <div className='grid gap-y-3'>
+              <p className='font-semibold'>Upcoming events</p>
+              <div className='bg-gray-100 grid justify-between h-[400px]'>
+                <div>
+                  <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+                </div>
+                <div className='px-8 py-3 grid justify-between h-full'>
+                  <p>We have a summer code camp coming up for kids between ages of 10 -14</p>
+                  <Form method='get' className='flex items-end'>
+                    <button className='font-bold text-[18px]'>Read more</button>
+                  </Form>
+                </div>
+              </div>
+            </div>
+
+            <div className='grid gap-y-3'>
+              <p className='font-semibold'>Blog</p>
+              <div className='bg-gray-100 grid justify-between h-[400px]'>
+                <div>
+                  <img src={stigma} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+                </div>
+                <div className='px-8 py-3 grid justify-between h-full'>
+                  <p>Battling Mental Health Symptoms and the Consequences of Stigma</p>
+                  <Form method='get' className='flex items-end'>
+                    <button className='font-bold text-[18px]'>Read more</button>
+                  </Form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="find p-4 sm:p-[50px]">
           <div className="max-w-2xl px-6 py-10 md:px-0">
             <p className='text-xl'><span className='font-bold'>PTTS</span>, Please Talk To Somebody, is the nation's largest grassroots mental health organization dedicated to building better lives for the millions of Nigerians affected by mental illness.</p>
@@ -88,7 +128,7 @@ export default function Index() {
         <section className="support-the-community px-8 bg-[#FFD800]">
           <h1 className='text-2xl lg:text-4xl text-center pt-8'>Support the Community<span className='italic'>!</span></h1>
           <div className="grid gap-y-6 items-center justify-center place-items-center mt-5 pb-20">
-            <p className='text-xl text-center'>Please Talk To Somebody is a private, non-stock, and non-profit organization, donations and any kind of support would  go a long way to help us run our campaigns! {'<3'} </p>
+            <p className='lg:text-xl text-center'>Please Talk To Somebody is a private, non-stock, and non-profit organization, donations and any kind of support would  go a long way to help us run our campaigns! {'<3'} </p>
             <button className='rounded-full p-4 text-green-ptts bg-white w-auto'>Make donation</button>
           </div>
         </section>
@@ -96,7 +136,7 @@ export default function Index() {
         <section className="acrros-the-nation bg-gray-200 py-[50px]">
           <div className='px-8 pb-14'>
             <h1 className='text-2xl md:text-4xl font-bold text-center'>From Next Door To Across The Nation</h1>
-            <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[40px]'></span>
+            <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[30px]'></span>
           </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-y-[60px] md:gap-x-[35px] px-6 md:px-12">
