@@ -81,7 +81,7 @@ const TopNavigationBar = (): JSX.Element => {
 }
 
 export const NavigationBar = (): JSX.Element => {
-    const [showMobileNavLink, setShowMobileNavLink] = useState<boolean>(true)
+    const [showMobileNavLink,] = useState<boolean>(true)
     const handleShowMobileNavLink = () => {
         const mobilemenu = document.querySelector('.mobile-nav-link-wrapper')
 
