@@ -477,7 +477,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
   justify-content: space-between;
   --tw-bg-opacity: 1;
-  background-color: rgb(9 110 9 / var(--tw-bg-opacity));
+  background-color: rgb(24 175 122 / var(--tw-bg-opacity));
   padding: 0.5rem;
 }
 

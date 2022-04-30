@@ -10,7 +10,7 @@
     }
 
     .mobile-nav-wrapper {
-        @apply bg-secondary min-h-[80px] p-2 flex flex-row items-center justify-between;
+        @apply bg-[#18af7a] min-h-[80px] p-2 flex flex-row items-center justify-between;
     }
 
     .menu-icon {
