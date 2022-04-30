@@ -18,11 +18,11 @@
     }
 
     .menu-icon:hover {
-        @apply text-white border-white;
+        @apply text-[#fad90e] border-[#fad90e];
     }
 
     .mobile-nav-link-wrapper {
-        @apply bg-black flex flex-col gap-y-3 text-white mx-auto p-3 rounded-bl rounded-br invisible transition-all delay-[.5s] ease-in-out fixed -left-[999px] w-full;
+        @apply bg-[#18af7a] border-b-2 border-[#ffd800] flex flex-col gap-y-3 text-white mx-auto p-3 rounded-bl rounded-br invisible transition-all delay-[.5s] ease-in-out fixed -left-[999px] w-full;
     }
 
     .mobile-nav-link-wrapper.show {

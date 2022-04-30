@@ -61,16 +61,16 @@ export default function Index() {
         <section className="find p-4 sm:p-[50px]">
           <div className="max-w-2xl px-6 py-10 md:px-0">
             <p className='text-xl'><span className='font-bold'>PTTS</span>, Please Talk To Somebody, is the nation's largest grassroots mental health organization dedicated to building better lives for the millions of Nigerians affected by mental illness.</p>
-            <div className="flex items-center gap-x-3 mt-8">
+            <div className="flex flex-col gap-y-5 md:gap-y-0 md:flex-row items-center gap-x-3 mt-8">
               <p className='font-bold text-sm'>Find your Local PTTS</p>
-              <Form method="post" className='flex items-center gap-x-3'>
-                <select name="" id="" className='rounded border-2 p-3 border-green-ptts w-[150px] md:w-[300px] max-w-xl'>
+              <Form method="post" className='flex flex-col gap-y-4 items-center gap-x-3 w-full'>
+                <select name="" id="" className='rounded bg-white border-2 p-3 border-green-ptts w-full md:w-[300px] max-w-xl'>
                   <option value="Lagos">BY STATE</option>
                   <option value="Lagos">Lagos</option>
                   <option value="Lagos">Oyo</option>
                   <option value="Lagos">Osun</option>
                 </select>
-                <button className='bg-green-ptts text-white p-4 rounded font-semibold'>GO</button>
+                <button className='bg-green-ptts w-full text-white p-4 rounded font-semibold'>GO</button>
               </Form>
             </div>
           </div>

@@ -25,27 +25,27 @@ const CustomNavLink = ({ to, name }: CustomNavLinkType) => {
 const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Element => {
     return (
         <div className="mobile-nav-link-wrapper transition-all delay-75 ease-in-out -left-[999px] w-full">
-            <div className="flex items-center justify-between pb-2 border-b border-b-[#4b5541]">
+            <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
                 <p>Home</p>
-                <CaretDownIcon className="w-6 h-6 text-[#b3ff66] cursor-pointer" />
+                <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
             </div>
 
-            <div className="flex items-center justify-between pb-2 border-b border-b-[#4b5541]">
+            <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
                 <p>Projects</p>
-                <CaretDownIcon className="w-6 h-6 text-[#b3ff66] cursor-pointer" />
+                <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
             </div>
 
-            <div className="flex items-center justify-between pb-2 border-b border-b-[#4b5541]">
+            <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
                 <p>Events</p>
             </div>
 
-            <div className="flex items-center justify-between pb-2 border-b border-b-[#4b5541]">
+            <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
                 <p>News</p>
             </div>
 
-            <div className="flex items-center justify-between pb-2 border-b border-b-[#4b5541]">
+            <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
                 <p>Pages</p>
-                <CaretDownIcon className="w-6 h-6 text-[#b3ff66] cursor-pointer" />
+                <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
             </div>
 
             <div className="flex items-center justify-between">
@@ -74,7 +74,7 @@ const TopNavigationBar = (): JSX.Element => {
                     <FacebookIcon className="w-4 h-4" />
                     <TwitterIcon className="w-4 h-4" />
                 </div>
-                <button className="appointment-link">Book an Appointment</button>
+                <button className="appointment-link">Donate now</button>
             </div>
         </div>
     )
