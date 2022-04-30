@@ -73,7 +73,7 @@ export default function Index() {
                   <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
                 </div>
                 <div className='px-8 py-3 grid justify-between h-full'>
-                  <p>We have a summer code camp coming up for kids between ages of 10 -14</p>
+                  <p>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
                   <Form method='get' className='flex items-end'>
                     <button className='font-bold text-[18px]'>Read more</button>
                   </Form>
