@@ -118,9 +118,9 @@ export default function Index() {
         </section>
 
         <section className="join-community bg-[#74C3D7] p-[50px]">
-          <h1 className='text-white font-bold text-2xl lg:text-4xl text-center mb-5'>Join the <span className='italic'>community!</span></h1>
+          <h1 className='text-white font-bold text-2xl lg:text-4xl text-center mb-5'>Connect with your <span className='italic'>community today!</span></h1>
           <div className="grid gap-y-5 justify-center place-items-center text-white lg:max-w-md lg:mx-auto">
-            <p className='text-center lg:text-xl'>Catch all our updates and connect with tens of thousands of mental health champions just like you—who share our dream of a mentally healthier environment!</p>
+            <p className='text-center lg:text-xl'>Our trained professionals can help you put your skills to work! Let us  assist you in discovering a place for you within your community. Whether it is a earning a paycheck or making a significant contribution in a very meaningful way, we can help you to discover your own unique place and create a successful future!</p>
             <button className='rounded-full p-4 text-blue-600 bg-white w-auto'>View community</button>
           </div>
         </section>

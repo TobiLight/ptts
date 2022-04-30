@@ -1163,6 +1163,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px){
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
   .sm\:p-\[50px\]{
     padding: 50px;
   }
