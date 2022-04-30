@@ -131,7 +131,7 @@ export const NavigationBar = (): JSX.Element => {
 
 export const Footer = (): JSX.Element => {
     return (
-        <footer className="flex flex-col md:flex-row justify-between p-10 items-center bg-[#525152]">
+        <footer className="flex flex-col md:flex-row justify-between p-10 items-center bg-[#18af7a]">
             <div className="text-white">
                 <p className="text-2xl">PTTS</p>
             </div>
