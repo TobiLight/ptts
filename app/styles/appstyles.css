@@ -667,6 +667,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 20px;
 }
 
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
 .block{
   display: block;
 }
@@ -1029,6 +1033,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[17px\]{
+  font-size: 17px;
 }
 
 .font-bold{

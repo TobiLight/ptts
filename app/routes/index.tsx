@@ -101,36 +101,36 @@ export default function Index() {
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-y-[60px] md:gap-x-[35px] px-6 md:px-12">
             <div className="bg-white max-w-3xl py-[40px] place-content-start px-[20px] lg:px-[32px] w-[100%] grid gap-y-4 rounded lg:h-[360px]">
-              <div className="card-header grid justify-center lg:justify-start">
+              <div className="card-header mb-7 grid justify-center lg:justify-start">
                 <h1 className='text-2xl font-semibold'>Find Support</h1>
                 <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[20px] lg:mx-0'></span>
               </div>
               <div className='grid gap-y-8'>
-                <p className="text-center text-[18px] lg:text-left">If you or someone you know is struggling, you are not alone. There are many support services and treatment options that may help.
+                <p className="text-center text-[17px] lg:text-left">If you or someone you know is struggling, you are not alone. There are many support services and treatment options that may help.
                 </p>
                 <Link to="/find-support" className='text-center font-bold text-xl text-green-ptts lg:text-left'>Read more</Link>
               </div>
             </div>
 
             <div className="bg-white max-w-3xl py-[40px] place-content-start px-[20px] lg:px-[32px] w-[100%] grid gap-y-4 rounded lg:h-[360px]">
-              <div className="card-header grid justify-center lg:justify-start">
+              <div className="card-header mb-7 grid justify-center lg:justify-start">
                 <h1 className='text-2xl font-semibold'>Get Involved</h1>
                 <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[20px] lg:mx-0'></span>
               </div>
               <div className='grid gap-y-8'>
-                <p className="text-center text-[18px] lg:text-left">Get involved and make a difference in the lives of Americans living with mental health conditions.
+                <p className="text-center text-[17px] lg:text-left">Get involved and make a difference in the lives of Americans living with mental health conditions.
                 </p>
                 <Link to="/find-support" className='text-center font-bold text-xl text-green-ptts lg:text-left'>Read more</Link>
               </div>
             </div>
 
             <div className="bg-white max-w-3xl py-[40px] place-content-start px-[20px] lg:px-[32px] w-[100%] grid gap-y-4 rounded lg:h-[360px]">
-              <div className="card-header grid justify-center lg:justify-start">
+              <div className="card-header mb-7 grid justify-center lg:justify-start">
                 <h1 className='text-2xl font-semibold'>Advocate for Change</h1>
                 <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[20px] lg:mx-0'></span>
               </div>
               <div className='grid gap-y-8'>
-                <p className="text-center text-[18px] lg:text-left">Policy change is one major way we can make a difference in the lives of people living with mental health conditions and their families. Limits the...
+                <p className="text-center text-[17px] lg:text-left">Policy change is one major way we can make a difference in the lives of people living with mental health conditions and their families. Limits the...
                 </p>
                 <Link to="/find-support" className='text-center font-bold text-xl text-green-ptts lg:text-left'>Read more</Link>
               </div>
