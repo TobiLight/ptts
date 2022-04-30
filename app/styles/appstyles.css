@@ -476,6 +476,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 216 0 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(24 175 122 / var(--tw-bg-opacity));
   padding: 0.5rem;
@@ -634,11 +637,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -663,12 +661,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 40px;
 }
 
-.mt-\[20px\]{
-  margin-top: 20px;
-}
-
 .mb-7{
   margin-bottom: 1.75rem;
+}
+
+.mt-\[20px\]{
+  margin-top: 20px;
 }
 
 .block{
@@ -727,10 +725,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1rem;
 }
 
-.w-\[150px\]{
-  width: 150px;
-}
-
 .w-auto{
   width: auto;
 }
@@ -741,10 +735,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[100\%\]{
   width: 100%;
-}
-
-.w-\[250px\]{
-  width: 250px;
 }
 
 .max-w-lg{
@@ -822,13 +812,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 1.5rem;
 }
 
+.gap-y-5{
+  row-gap: 1.25rem;
+}
+
 .gap-x-3{
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
-}
-
-.gap-y-5{
-  row-gap: 1.25rem;
 }
 
 .gap-y-\[60px\]{
@@ -864,16 +854,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 90 49 / var(--tw-border-opacity));
 }
 
-.border-b-\[\#4b5541\]{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(75 85 65 / var(--tw-border-opacity));
-}
-
-.border-b-\[\#fad90e\]{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(250 217 14 / var(--tw-border-opacity));
-}
-
 .border-b-\[\#fff\]{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -899,6 +879,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 216 0 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-green-ptts{
   --tw-bg-opacity: 1;
   background-color: rgb(0 90 49 / var(--tw-bg-opacity));
@@ -907,11 +892,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#74C3D7\]{
   --tw-bg-opacity: 1;
   background-color: rgb(116 195 215 / var(--tw-bg-opacity));
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200{
@@ -975,11 +955,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 20px;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -1008,6 +983,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Nanum Pen Script, cursive;
 }
 
+.text-\[18px\]{
+  font-size: 18px;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1024,10 +1003,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[50px\]{
   font-size: 50px;
-}
-
-.text-\[18px\]{
-  font-size: 18px;
 }
 
 .text-sm{
@@ -1159,13 +1134,13 @@ Ensure the default browser behavior of the `hidden` attribute.
          column-gap: 70px;
   }
 
+  .md\:gap-y-0{
+    row-gap: 0px;
+  }
+
   .md\:gap-x-\[35px\]{
     -moz-column-gap: 35px;
          column-gap: 35px;
-  }
-
-  .md\:gap-y-0{
-    row-gap: 0px;
   }
 
   .md\:py-5{
