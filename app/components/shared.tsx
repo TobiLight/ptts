@@ -133,7 +133,7 @@ export const Footer = (): JSX.Element => {
     return (
         <footer className="flex justify-between p-10 items-center bg-[#525152]">
             <div className="text-white">
-                <p>Pleas</p>
+                <p className="text-2xl">PTTS</p>
             </div>
             <div className="text-white">
                 <p className="font-bold text-xl">Contact us</p>
