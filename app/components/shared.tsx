@@ -57,7 +57,7 @@ const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Eleme
 
 const TopNavigationBar = (): JSX.Element => {
     return (
-        <div className="bg-secondary flex justify-between w-full px-8 min-h-[50px] md:grid md:py-5 md:place-content-center md:gap-y-6 lg:flex lg:py-0 lg:gap-y-0">
+        <div className="bg-[#18af7a] flex justify-between w-full px-8 min-h-[50px] md:grid md:py-5 md:place-content-center md:gap-y-6 lg:flex lg:py-0 lg:gap-y-0">
             <div className="flex items-center gap-x-4 text-white flex-1">
                 <p className="flex items-center gap-x-2 text-white">
                     <PhoneIcon className="w-4 h-4" />
@@ -74,7 +74,7 @@ const TopNavigationBar = (): JSX.Element => {
                     <FacebookIcon className="w-4 h-4" />
                     <TwitterIcon className="w-4 h-4" />
                 </div>
-                <Link to="/book-appointment" className="appointment-link">Book an Appointment</Link>
+                <button className="appointment-link">Book an Appointment</button>
             </div>
         </div>
     )
@@ -110,9 +110,9 @@ export const NavigationBar = (): JSX.Element => {
                 <div className="hidden md:flex">
                     <TopNavigationBar />
                 </div>
-                <div className="min-h-[100px] flex items-center justify-between md:px-0 lg:px-4">
+                <div className="min-h-[100px] flex items-center justify-between md:px-0 lg:px-4 bg-[#ff986b] text-white">
                     <div className="logo">
-                        <h1 className="font-nanum-pen font-bold text-2xl text-secondary">PleaseTalkToSomebody</h1>
+                        <h1 className="font-nanum-pen font-bold text-[40px] text-white">PleaseTalkToSomebody</h1>
                     </div>
 
                     <div className="flex items-center gap-x-4">
@@ -126,5 +126,21 @@ export const NavigationBar = (): JSX.Element => {
                 </div>
             </div>
         </>
+    )
+}
+
+export const Footer = (): JSX.Element => {
+    return (
+        <footer className="flex justify-between p-10 items-center bg-[#525152]">
+            <div className="text-white">
+                <p>Pleas</p>
+            </div>
+            <div className="text-white">
+                <p className="font-bold text-xl">Contact us</p>
+            </div>
+            <div className="text-white">
+                <p>All rights reserved</p>
+            </div>
+        </footer>
     )
 }

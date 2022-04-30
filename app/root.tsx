@@ -7,7 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { NavigationBar } from "./components/Navigation";
+import { Footer, NavigationBar } from "./components/shared";
 import appstyle from "./styles/appstyles.css"
 
 export const links: LinksFunction = () => {
@@ -36,6 +36,7 @@ export default function App() {
         <NavigationBar />
         <Outlet />
         <ScrollRestoration />
+        <Footer />
         <Scripts />
         <LiveReload />
       </body>

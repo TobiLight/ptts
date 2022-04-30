@@ -1,4 +1,4 @@
-import { Form } from '@remix-run/react';
+import { Form, Link } from '@remix-run/react';
 import heroBg from '../../public/images/hero-bg.jpg'
 import mentalHealthImage from "../../public/images/mental-health.jpg"
 
@@ -30,7 +30,7 @@ export default function Index() {
             <div className="grid gap-y-4 lg:gap-y-10 lg:py-[150px] lg:mr-5">
               <div className="p-[50px] lg:p-0">
                 <h1 className='text-2xl lg:text-4xl font-semibold mb-6'>You deserve a mentally healthier <br /> <span className='font-bold text-green-ptts italic'>environment.</span></h1>
-                <p className='lg:text-xl'>We dream of building a future where your mental health doesn’t get in the way of achieving your dreams and thriving within your communities. We do this by spreading awareness to end the stigma, empowering you to support yourself or others, and collaborating across sectors for solutions that last.
+                <p className='lg:text-xl text-[18px]'>We dream of building a future where your mental health doesn’t get in the way of achieving your dreams and thriving within your communities. We do this by spreading awareness to end the stigma, empowering you to support yourself or others, and collaborating across sectors for solutions that last.
                   <br />
                   <br />
                   We believe this—and so do the people and partners we’ve helped and worked with along the way!</p>
@@ -93,10 +93,48 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="acrros-the-nation">
-          <div className='px-8 py-14'>
+        <section className="acrros-the-nation bg-gray-200 py-[50px]">
+          <div className='px-8 pb-14'>
             <h1 className='text-2xl md:text-4xl font-bold text-center'>From Next Door To Across The Nation</h1>
             <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[40px]'></span>
+          </div>
+
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-y-[60px] md:gap-x-[35px] px-6 md:px-12">
+            <div className="bg-white max-w-3xl py-[40px] place-content-start px-[20px] lg:px-[32px] w-[100%] grid gap-y-4 rounded lg:h-[360px]">
+              <div className="card-header grid justify-center lg:justify-start">
+                <h1 className='text-2xl font-semibold'>Find Support</h1>
+                <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[20px] lg:mx-0'></span>
+              </div>
+              <div className='grid gap-y-8'>
+                <p className="text-center text-[18px] lg:text-left">If you or someone you know is struggling, you are not alone. There are many support services and treatment options that may help.
+                </p>
+                <Link to="/find-support" className='text-center font-bold text-xl text-green-ptts lg:text-left'>Read more</Link>
+              </div>
+            </div>
+
+            <div className="bg-white max-w-3xl py-[40px] place-content-start px-[20px] lg:px-[32px] w-[100%] grid gap-y-4 rounded lg:h-[360px]">
+              <div className="card-header grid justify-center lg:justify-start">
+                <h1 className='text-2xl font-semibold'>Get Involved</h1>
+                <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[20px] lg:mx-0'></span>
+              </div>
+              <div className='grid gap-y-8'>
+                <p className="text-center text-[18px] lg:text-left">Get involved and make a difference in the lives of Americans living with mental health conditions.
+                </p>
+                <Link to="/find-support" className='text-center font-bold text-xl text-green-ptts lg:text-left'>Read more</Link>
+              </div>
+            </div>
+
+            <div className="bg-white max-w-3xl py-[40px] place-content-start px-[20px] lg:px-[32px] w-[100%] grid gap-y-4 rounded lg:h-[360px]">
+              <div className="card-header grid justify-center lg:justify-start">
+                <h1 className='text-2xl font-semibold'>Advocate for Change</h1>
+                <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[20px] lg:mx-0'></span>
+              </div>
+              <div className='grid gap-y-8'>
+                <p className="text-center text-[18px] lg:text-left">Policy change is one major way we can make a difference in the lives of people living with mental health conditions and their families. Limits the...
+                </p>
+                <Link to="/find-support" className='text-center font-bold text-xl text-green-ptts lg:text-left'>Read more</Link>
+              </div>
+            </div>
           </div>
         </section>
       </main>

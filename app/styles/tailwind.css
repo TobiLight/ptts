@@ -30,9 +30,9 @@
     }
 
     .appointment-link {
-        @apply px-4 py-2 text-black h-full flex items-center bg-[#88de32];
+        @apply px-4 py-2 text-white h-full flex items-center bg-[#005e76];
         /* "to left" / "to right" - affects initial color */
-        background: linear-gradient(to left, #88de32 50%, #272925 50%) right;
+        /* background: linear-gradient(to left, #88de32 50%, #272925 50%) right; */
         background-size: 200%;
         transition: .5s ease-out;
     }
@@ -43,7 +43,7 @@
     }
 
     .link-is-active {
-        @apply bg-secondary rounded-full p-3 text-white font-bold ease-in duration-300;
+        @apply bg-[#18af7a] rounded-full text-[18px] p-3 text-white font-bold ease-in duration-300;
     }
 
     .link-is-active:hover {
@@ -51,7 +51,7 @@
     }
 
     .link-is-not-active {
-        @apply p-3 text-black font-semibold ease-in duration-300;
+        @apply p-3 text-white tracking-wide text-[18px] font-semibold ease-in duration-300;
     }
 
     .link-is-not-active:hover {
