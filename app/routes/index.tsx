@@ -67,11 +67,15 @@ export default function Index() {
           </div>
 
           <div className="max-w-[450px] mx-auto sm:max-w-full grid gap-y-[70px] sm:grid-cols-2 sm:place-items-center md:grid-cols-3 lg:flex lg:flex-row lg:items-center lg:flex-wrap lg:place-items-center lg:justify-center lg:gap-x-[2%]">
-            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[350px] md:h-[100%] grid rounded drop-shadow-md'>
               <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
-              <div className='w-full h-[150px]'>
+
+              <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
+                <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
+              </div>
+              <div className='w-full h-[200px]'>
                 <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
@@ -82,11 +86,11 @@ export default function Index() {
               </div>
             </div>
 
-            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[350px] md:h-[100%] grid rounded drop-shadow-md'>
               <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
                 <p className='text-gray-600 font-bold text-xs'>Blog</p>
               </div>
-              <div className='w-full h-[150px]'>
+              <div className='w-full h-[200px]'>
                 <img src={stigma} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
@@ -97,11 +101,11 @@ export default function Index() {
               </div>
             </div>
 
-            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[350px] md:h-[100%] grid rounded drop-shadow-md'>
               <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
-              <div className='w-full h-[150px]'>
+              <div className='w-full h-[200px]'>
                 <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
@@ -112,11 +116,11 @@ export default function Index() {
               </div>
             </div>
 
-            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[350px] md:h-[100%] grid rounded drop-shadow-md'>
               <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
-              <div className='w-full h-[150px]'>
+              <div className='w-full h-[200px]'>
                 <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
@@ -126,11 +130,11 @@ export default function Index() {
                 </Form>
               </div>
             </div>
-            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[350px] md:h-[100%] grid rounded drop-shadow-md'>
               <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
-              <div className='w-full h-[150px]'>
+              <div className='w-full h-[200px]'>
                 <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
@@ -140,11 +144,11 @@ export default function Index() {
                 </Form>
               </div>
             </div>
-            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[350px] md:h-[100%] grid rounded drop-shadow-md'>
               <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
-              <div className='w-full h-[150px]'>
+              <div className='w-full h-[200px]'>
                 <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>

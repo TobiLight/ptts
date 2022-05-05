@@ -636,8 +636,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.left-0{
+  left: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
 .z-\[1\]{
   z-index: 1;
+}
+
+.z-\[3\]{
+  z-index: 3;
 }
 
 .mx-auto{
@@ -705,12 +717,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5px;
 }
 
-.h-\[275px\]{
-  height: 275px;
+.h-\[350px\]{
+  height: 350px;
 }
 
-.h-\[150px\]{
-  height: 150px;
+.h-\[200px\]{
+  height: 200px;
+}
+
+.h-\[10px\]{
+  height: 10px;
+}
+
+.h-\[100px\]{
+  height: 100px;
 }
 
 .min-h-\[50px\]{
