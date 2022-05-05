@@ -40,31 +40,31 @@ export default function ContactUs(): JSX.Element {
                     <Form method="post" className="mt-10 grid gap-y-5">
                         <label htmlFor="email" className="grid gap-y-2 text-sm font-semibold">
                             E-mail address:
-                            <input type="email" id="email" name="email" placeholder="Email address" className="w-full rounded drop-shadow-md p-4" />
+                            <input type="email" id="email" name="email" placeholder="Email address" className="w-full rounded border p-4" />
                         </label>
                         <label htmlFor="confirm-email" className="grid gap-y-2 text-sm font-semibold">
                             Confirm E-mail address:
-                            <input type="email" id="confirm-email" name="confirm-email" placeholder="Email address" className="w-full rounded drop-shadow-md p-4" />
+                            <input type="email" id="confirm-email" name="confirm-email" placeholder="Email address" className="w-full rounded border p-4" />
                         </label>
                         <label htmlFor="firstname" className="grid gap-y-2 text-sm font-semibold">
                             First Name:
-                            <input type="text" id="firstname" name="firstname" placeholder="Firstname" className="w-full rounded drop-shadow-md p-4" />
+                            <input type="text" id="firstname" name="firstname" placeholder="Firstname" className="w-full rounded border p-4" />
                         </label>
                         <label htmlFor="lasttname" className="grid gap-y-2 text-sm font-semibold">
                             Last Name:
-                            <input type="text" id="lastname" name="lastname" placeholder="Lastname" className="w-full rounded drop-shadow-md p-4" />
+                            <input type="text" id="lastname" name="lastname" placeholder="Lastname" className="w-full rounded border p-4" />
                         </label>
                         <label htmlFor="phonenum" className="grid gap-y-2 text-sm font-semibold">
                             Phone Number:
-                            <input type="tel" id="phonenum" name="phonenum" placeholder="Phone Number" className="w-full rounded drop-shadow-md p-4" />
+                            <input type="tel" id="phonenum" name="phonenum" placeholder="Phone Number" className="w-full rounded border p-4" />
                         </label>
                         <label htmlFor="phonenum" className="grid gap-y-2 text-sm font-semibold">
                             Subject:
-                            <input type="text" id="subject" name="subject" placeholder="Message Subject" className="w-full rounded drop-shadow-md p-4" />
+                            <input type="text" id="subject" name="subject" placeholder="Message Subject" className="w-full rounded border p-4" />
                         </label>
                         <label htmlFor="message" className="grid gap-y-2 text-sm font-semibold">
                             Your message:
-                            <textarea id="message" cols={30} rows={4} name="message" placeholder="Type your message here..." className="w-full rounded drop-shadow-md p-4" />
+                            <textarea id="message" cols={30} rows={4} name="message" placeholder="Type your message here..." className="w-full border rounded p-4" />
                         </label>
                         <div className="flex w-full justify-end items-center">
                             <button className="px-4 py-2 w-auto text-white rounded drop-shadow-sm bg-[#18af7a] transition-all ease-in hover:bg-[#12865e]">Send</button>
