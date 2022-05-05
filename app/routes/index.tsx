@@ -2,7 +2,7 @@ import { Form, Link } from '@remix-run/react';
 import heroBg from '../../public/images/hero-bg.jpg'
 import mentalHealthImage from "../../public/images/mental-health.jpg"
 import stigma from "../../public/images/stigma.png"
-import codecamp from "../../public/images/codecamp.jpeg"
+import summercode from "../../public/images/summer-code.jpeg"
 import localpttsbg from "../../public/images/localpttsbg.jpg"
 
 export default function Index() {
@@ -72,7 +72,7 @@ export default function Index() {
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
               <div className='w-full h-[200px]'>
-                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+                <img src={summercode} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
                 <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
@@ -102,7 +102,7 @@ export default function Index() {
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
               <div className='w-full h-[200px]'>
-                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+                <img src={summercode} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
                 <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
@@ -117,7 +117,7 @@ export default function Index() {
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
               <div className='w-full h-[200px]'>
-                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+                <img src={summercode} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
                 <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
@@ -131,7 +131,7 @@ export default function Index() {
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
               <div className='w-full h-[200px]'>
-                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+                <img src={summercode} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
                 <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
@@ -145,7 +145,7 @@ export default function Index() {
                 <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
               </div>
               <div className='w-full h-[200px]'>
-                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+                <img src={summercode} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
               </div>
               <div className='p-[10px] grid items-start justify-between ]'>
                 <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
@@ -161,7 +161,7 @@ export default function Index() {
           <div className="px-6 py-10 md:px-0 flex flex-col-reverse md:grid md:grid-cols-2 md:gap-x-8">
 
             <div className="grid gap-y-5 items-center gap-x-3 w-full place-items-center md:place-items-start">
-              <p className='text-xl'><span className='font-bold'>PTTS</span>, Please Talk To Somebody, is the nation's largest grassroots mental health organization dedicated to building better lives for the millions of Nigerians affected by mental illness.</p>
+              <p className='text-md lg:text-xl'><span className='font-bold'>PTTS</span>, Please Talk To Somebody, is the nation's largest grassroots mental health organization dedicated to building better lives for the millions of Nigerians affected by mental illness.</p>
               <p className='font-bold text-sm'>Find your Local PTTS</p>
               <Form method="post" className='w-full max-w-sm grid'>
                 <select name="" id="" className='rounded bg-white border-2 p-3 border-green-ptts w-full'>

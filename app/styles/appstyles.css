@@ -691,6 +691,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-\[10px\]{
+  margin-top: 10px;
+}
+
 .block{
   display: block;
 }
@@ -916,6 +924,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
 }
 
 .rounded-bl{
@@ -1162,6 +1174,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-20{
   padding-bottom: 5rem;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 
 .text-center{

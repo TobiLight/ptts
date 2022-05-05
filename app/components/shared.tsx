@@ -1,4 +1,4 @@
-import { NavLink, Link } from "@remix-run/react"
+import { NavLink, Link, NavLinkProps } from "@remix-run/react"
 import { useState } from "react"
 import type { MobileNavigationBarType } from "~/utils/types"
 import type { To } from "history"
@@ -13,6 +13,7 @@ type CustomNavLinkType = {
 const CustomNavLink = ({ to, name, className }: CustomNavLinkType) => {
     return (
         <NavLink
+            prefetch="render"
             to={to}
             className={({ isActive }) =>
                 isActive ? `link-is-active ${className}` : `link-is-not-active ${className}`
@@ -37,11 +38,12 @@ const CustomMobileNavLink = ({ to, name, className }: CustomNavLinkType) => {
 }
 
 const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Element => {
+    const [displayPages, setDisplayPages] = useState<boolean>(false)
     return (
         <div className="mobile-nav-link-wrapper transition-all delay-75 ease-in-out -left-[999px] w-full">
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
                 <CustomMobileNavLink to="/" name="Home" />
-                <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
+                {/* <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" /> */}
             </div>
 
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
@@ -53,13 +55,22 @@ const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Eleme
                 <CustomMobileNavLink to="/events" name="Events" />
             </div>
 
-            <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <CustomMobileNavLink to="/news" name="News" />
-            </div>
 
-            <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <CustomMobileNavLink to="/pages" name="Pages" />
-                <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
+            <div onClick={() => {
+                setDisplayPages(!displayPages)
+            }} className="cursor-pointer pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
+                <div className="flex items-center justify-between">
+                    <CustomMobileNavLink to="/pages" name="Pages" />
+                    <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
+                </div>
+                <div className={displayPages ? `bg-white p-3 mt-[10px] rounded-sm` : `hidden`}>
+                    <div className="px-6 grid gap-y-4">
+                        <CustomMobileNavLink to="/pages/about-us" className="pb-3 border-b text-gray-600 text-sm" name="About Us" />
+                        <CustomMobileNavLink to="/pages/latest" className="pb-3 border-b text-gray-600 text-sm" name="View latest" />
+                        <CustomMobileNavLink to="/pages/shop" className="pb-3 border-b text-gray-600 text-sm" name="Shop" />
+                        <CustomMobileNavLink to="/pages/shop" className="pb-3 border-b text-gray-600 text-sm" name="Shop" />
+                    </div>
+                </div>
             </div>
 
             <div className="flex items-center justify-between">
