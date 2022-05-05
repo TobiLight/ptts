@@ -43,11 +43,11 @@
     }
 
     .link-is-active {
-        @apply bg-[#18af7a] rounded-full text-[18px] p-3 text-white font-bold ease-in duration-300;
+        @apply text-[#ffd800] rounded-full text-[18px] p-3 font-bold ease-in duration-300;
     }
 
     .link-is-active:hover {
-        @apply bg-primary;
+        @apply text-white;
     }
 
     .link-is-not-active {
@@ -55,7 +55,7 @@
     }
 
     .link-is-not-active:hover {
-        @apply text-secondary border-b-[3px] pb-0 border-b-secondary rounded-none;
+        @apply text-[#ffd800] border-b-[3px] pb-0 border-b-[#ffd800] rounded-none;
     }
 
     .hero-section {

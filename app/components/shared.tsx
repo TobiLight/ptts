@@ -111,9 +111,9 @@ export const NavigationBar = (): JSX.Element => {
                 <div className="hidden md:flex">
                     <TopNavigationBar />
                 </div>
-                <div className="min-h-[100px] flex items-center justify-between md:px-4 bg-[#ff986b] text-white">
+                <div className="min-h-[100px] flex items-center justify-between md:px-4 bg-[#18af7a] border-b-2 border-[#ffd800] text-white">
                     <div className="logo">
-                        <h1 className="font-nanum-pen font-bold md:text-[20px] lg:text-[40px] text-white">PleaseTalkToSomebody</h1>
+                        <Link to="/" className="font-nanum-pen font-bold md:text-[20px] lg:text-[40px] text-white">PleaseTalkToSomebody</Link>
                     </div>
 
                     <div className="flex items-center gap-x-4">
@@ -122,7 +122,7 @@ export const NavigationBar = (): JSX.Element => {
                         <CustomNavLink to='/events' name="Events" className="text-[14px] lg:text-[16px]" />
                         <CustomNavLink to='/news' name="News" className="text-[14px] lg:text-[16px]" />
                         <CustomNavLink to='/pages' name="Pages" className="text-[14px] lg:text-[16px]" />
-                        <CustomNavLink to='/contact' name="Contact" className="text-[14px] lg:text-[16px]" />
+                        <CustomNavLink to='/contact-us' name="Contact" className="text-[14px] lg:text-[16px]" />
                     </div>
                 </div>
             </div>
