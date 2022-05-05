@@ -1334,6 +1334,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.ease-linear{
+  transition-timing-function: linear;
+}
+
 /* Medium screens only */
 
 @media (min-width: 768px) {

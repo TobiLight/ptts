@@ -2,7 +2,7 @@ import { NavLink, Link, NavLinkProps } from "@remix-run/react"
 import { useState } from "react"
 import type { MobileNavigationBarType } from "~/utils/types"
 import type { To } from "history"
-import { CaretDownIcon, PhoneIcon, MessageIcon, FacebookIcon, TwitterIcon, MenuIcon } from "./icons"
+import CaretUpIcon, { CaretDownIcon, PhoneIcon, MessageIcon, FacebookIcon, TwitterIcon, MenuIcon } from "./icons"
 
 type CustomNavLinkType = {
     to: To,
@@ -61,13 +61,12 @@ const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Eleme
             }} className="cursor-pointer pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
                 <div className="flex items-center justify-between">
                     <CustomMobileNavLink to="/pages" name="Pages" />
-                    <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
+                    {displayPages ? <CaretUpIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" /> : <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />}
                 </div>
                 <div className={displayPages ? `bg-white p-3 mt-[10px] rounded-sm` : `hidden`}>
                     <div className="px-6 grid gap-y-4">
                         <CustomMobileNavLink to="/pages/about-us" className="pb-3 border-b text-gray-600 text-sm" name="About Us" />
-                        <CustomMobileNavLink to="/pages/latest" className="pb-3 border-b text-gray-600 text-sm" name="View latest" />
-                        <CustomMobileNavLink to="/pages/shop" className="pb-3 border-b text-gray-600 text-sm" name="Shop" />
+                        <CustomMobileNavLink to="/pages/blog" className="pb-3 border-b text-gray-600 text-sm" name="Blog" />
                         <CustomMobileNavLink to="/pages/shop" className="pb-3 border-b text-gray-600 text-sm" name="Shop" />
                     </div>
                 </div>
