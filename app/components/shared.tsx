@@ -6,15 +6,16 @@ import { CaretDownIcon, PhoneIcon, MessageIcon, FacebookIcon, TwitterIcon, MenuI
 
 type CustomNavLinkType = {
     to: To,
-    name: string
+    name: string,
+    className: string
 }
 
-const CustomNavLink = ({ to, name }: CustomNavLinkType) => {
+const CustomNavLink = ({ to, name, className }: CustomNavLinkType) => {
     return (
         <NavLink
             to={to}
             className={({ isActive }) =>
-                isActive ? 'link-is-active' : 'link-is-not-active'
+                isActive ? `link-is-active ${className}` : `link-is-not-active ${className}`
             }
         >
             {name}
@@ -110,18 +111,18 @@ export const NavigationBar = (): JSX.Element => {
                 <div className="hidden md:flex">
                     <TopNavigationBar />
                 </div>
-                <div className="min-h-[100px] flex items-center justify-between md:px-0 lg:px-4 bg-[#ff986b] text-white">
+                <div className="min-h-[100px] flex items-center justify-between md:px-4 bg-[#ff986b] text-white">
                     <div className="logo">
-                        <h1 className="font-nanum-pen font-bold text-[40px] text-white">PleaseTalkToSomebody</h1>
+                        <h1 className="font-nanum-pen font-bold md:text-[20px] lg:text-[40px] text-white">PleaseTalkToSomebody</h1>
                     </div>
 
                     <div className="flex items-center gap-x-4">
-                        <CustomNavLink to='/' name="Home" />
-                        <CustomNavLink to='/projects' name="Projects" />
-                        <CustomNavLink to='/events' name="Events" />
-                        <CustomNavLink to='/news' name="News" />
-                        <CustomNavLink to='/pages' name="Pages" />
-                        <CustomNavLink to='/contact' name="Contact" />
+                        <CustomNavLink to='/' name="Home" className="text-[14px] lg:text-[16px]" />
+                        <CustomNavLink to='/projects' name="Projects" className="text-[14px] lg:text-[16px]" />
+                        <CustomNavLink to='/events' name="Events" className="text-[14px] lg:text-[16px]" />
+                        <CustomNavLink to='/news' name="News" className="text-[14px] lg:text-[16px]" />
+                        <CustomNavLink to='/pages' name="Pages" className="text-[14px] lg:text-[16px]" />
+                        <CustomNavLink to='/contact' name="Contact" className="text-[14px] lg:text-[16px]" />
                     </div>
                 </div>
             </div>

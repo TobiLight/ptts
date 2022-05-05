@@ -3,6 +3,7 @@ import heroBg from '../../public/images/hero-bg.jpg'
 import mentalHealthImage from "../../public/images/mental-health.jpg"
 import stigma from "../../public/images/stigma.png"
 import codecamp from "../../public/images/codecamp.jpeg"
+import localpttsbg from "../../public/images/localpttsbg.jpg"
 
 export default function Index() {
   return (
@@ -29,9 +30,9 @@ export default function Index() {
               <img src={mentalHealthImage} alt="Mental Health Awareness" className='object-cover w-full hh-auto rounded-md' />
             </div>
             <div className="grid gap-y-4 lg:gap-y-10 lg:py-[150px] lg:mr-5">
-              <div className="p-[50px] lg:p-0">
+              <div className="p-5 sm:p-[50px] lg:p-0">
                 <h1 className='text-2xl lg:text-4xl font-semibold mb-6'>You deserve a mentally healthier <br /> <span className='font-bold text-green-ptts italic'>environment.</span></h1>
-                <p className='lg:text-xl text-[18px]'>We dream of building a future where your mental health doesn’t get in the way of achieving your dreams and thriving within your communities. We do this by spreading awareness to end the stigma, empowering you to support yourself or others, and collaborating across sectors for solutions that last.
+                <p className='text-sm text-md lg:text-xl text-[18px]'>We dream of building a future where your mental health doesn’t get in the way of achieving your dreams and thriving within your communities. We do this by spreading awareness to end the stigma, empowering you to support yourself or others, and collaborating across sectors for solutions that last.
                   <br />
                   <br />
                   We believe this—and so do the people and partners we’ve helped and worked with along the way!</p>
@@ -65,56 +66,117 @@ export default function Index() {
             <span className='w-[80px] h-[5px] bg-[#ffd800] mx-auto block mt-[30px]'></span>
           </div>
 
-          <div className="grid gap-y-[70px]">
-            <div className='grid gap-y-3'>
-              <p className='font-semibold'>Upcoming events</p>
-              <div className='bg-gray-100 grid justify-between min-h-[400px] h-[500px]'>
-                <div>
-                  <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
-                </div>
-                <div className='px-8 py-3 grid justify-between h-full'>
-                  <p>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
-                  <Form method='get' className='flex items-end'>
-                    <button className='font-bold text-[18px]'>Read more</button>
-                  </Form>
-                </div>
+          <div className="max-w-[450px] mx-auto sm:max-w-full grid gap-y-[70px] sm:grid-cols-2 sm:place-items-center md:grid-cols-3 lg:flex lg:flex-row lg:items-center lg:flex-wrap lg:place-items-center lg:justify-center lg:gap-x-[2%]">
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+              <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
+                <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
+              </div>
+              <div className='w-full h-[150px]'>
+                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+              </div>
+              <div className='p-[10px] grid items-start justify-between ]'>
+                <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
+                <Form method='get' className='flex items-end'>
+                  <button className='font-bold text-[14px] lg:text-[14px] border-2 hover:p-[7px] rounded border-[#ffd800] p-[7px] transition-all ease-in hover:bg-[#ffd800] hover:text-gray-600'>Read more</button>
+                </Form>
               </div>
             </div>
 
-            <div className='grid gap-y-3'>
-              <p className='font-semibold'>Blog</p>
-              <div className='bg-gray-100 grid justify-between min-h-[400px]'>
-                <div>
-                  <img src={stigma} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
-                </div>
-                <div className='px-8 py-3 grid justify-between h-full'>
-                  <p>Battling Mental Health Symptoms and the Consequences of Stigma</p>
-                  <Form method='get' className='flex items-end'>
-                    <button className='font-bold text-[18px]'>Read more</button>
-                  </Form>
-                </div>
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+              <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
+                <p className='text-gray-600 font-bold text-xs'>Blog</p>
+              </div>
+              <div className='w-full h-[150px]'>
+                <img src={stigma} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+              </div>
+              <div className='p-[10px] grid items-start justify-between ]'>
+                <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
+                <Form method='get' className='flex items-end'>
+                  <button className='font-bold text-[14px] lg:text-[14px] border-2 hover:p-[7px] rounded border-[#ffd800] p-[7px] transition-all ease-in hover:bg-[#ffd800] hover:text-gray-600'>Read more</button>
+                </Form>
+              </div>
+            </div>
+
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+              <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
+                <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
+              </div>
+              <div className='w-full h-[150px]'>
+                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+              </div>
+              <div className='p-[10px] grid items-start justify-between ]'>
+                <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
+                <Form method='get' className='flex items-end'>
+                  <button className='font-bold text-[14px] lg:text-[14px] border-2 hover:p-[7px] rounded border-[#ffd800] p-[7px] transition-all ease-in hover:bg-[#ffd800] hover:text-gray-600'>Read more</button>
+                </Form>
+              </div>
+            </div>
+
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+              <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
+                <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
+              </div>
+              <div className='w-full h-[150px]'>
+                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+              </div>
+              <div className='p-[10px] grid items-start justify-between ]'>
+                <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
+                <Form method='get' className='flex items-end'>
+                  <button className='font-bold text-[14px] lg:text-[14px] border-2 hover:p-[7px] rounded border-[#ffd800] p-[7px] transition-all ease-in hover:bg-[#ffd800] hover:text-gray-600'>Read more</button>
+                </Form>
+              </div>
+            </div>
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+              <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
+                <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
+              </div>
+              <div className='w-full h-[150px]'>
+                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+              </div>
+              <div className='p-[10px] grid items-start justify-between ]'>
+                <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
+                <Form method='get' className='flex items-end'>
+                  <button className='font-bold text-[14px] lg:text-[14px] border-2 hover:p-[7px] rounded border-[#ffd800] p-[7px] transition-all ease-in hover:bg-[#ffd800] hover:text-gray-600'>Read more</button>
+                </Form>
+              </div>
+            </div>
+            <div className='bg-gray-100 w-[100%] sm:w-[95%] md:w-[90%] lg:w-[20%] h-[275px] md:h-[100%] grid rounded drop-shadow-md'>
+              <div className='absolute right-0 top-0 bg-[#ffd800] p-[5px] max-w-[130px] rounded-bl'>
+                <p className='text-gray-600 font-bold text-xs'>Upcoming events</p>
+              </div>
+              <div className='w-full h-[150px]'>
+                <img src={codecamp} alt="Symptoms and Stigma" className='object-cover w-full h-full' />
+              </div>
+              <div className='p-[10px] grid items-start justify-between ]'>
+                <p className='text-[13px] w-[100%] md:text-[13px] mb-3'>PTTS is giving kids between ages of 9 -13 an opportunity to learn Web Development this summer.</p>
+                <Form method='get' className='flex items-end'>
+                  <button className='font-bold text-[14px] lg:text-[14px] border-2 hover:p-[7px] rounded border-[#ffd800] p-[7px] transition-all ease-in hover:bg-[#ffd800] hover:text-gray-600'>Read more</button>
+                </Form>
               </div>
             </div>
           </div>
         </section>
 
         <section className="find p-4 sm:p-[50px]">
-          <div className="max-w-2xl px-6 py-10 md:px-0">
-            <p className='text-xl'><span className='font-bold'>PTTS</span>, Please Talk To Somebody, is the nation's largest grassroots mental health organization dedicated to building better lives for the millions of Nigerians affected by mental illness.</p>
-            <div className="flex flex-col gap-y-5 md:gap-y-0 md:flex-row items-center gap-x-3 mt-8">
+          <div className="px-6 py-10 md:px-0 flex flex-col-reverse md:grid md:grid-cols-2 md:gap-x-8">
+
+            <div className="grid gap-y-5 items-center gap-x-3 w-full place-items-center md:place-items-start">
+              <p className='text-xl'><span className='font-bold'>PTTS</span>, Please Talk To Somebody, is the nation's largest grassroots mental health organization dedicated to building better lives for the millions of Nigerians affected by mental illness.</p>
               <p className='font-bold text-sm'>Find your Local PTTS</p>
-              <Form method="post" className='flex flex-col gap-y-4 items-center gap-x-3 w-full'>
-                <select name="" id="" className='rounded bg-white border-2 p-3 border-green-ptts w-full md:w-[300px] max-w-xl'>
+              <Form method="post" className='w-full max-w-sm grid'>
+                <select name="" id="" className='rounded bg-white border-2 p-3 border-green-ptts w-full'>
                   <option value="Lagos">BY STATE</option>
                   <option value="Lagos">Lagos</option>
                   <option value="Lagos">Oyo</option>
                   <option value="Lagos">Osun</option>
                 </select>
-                <button className='bg-green-ptts w-full text-white p-4 rounded font-semibold'>GO</button>
+                <button className='bg-green-ptts text-white p-4 rounded font-semibold w-full mt-5'>GO</button>
               </Form>
             </div>
+            <div className='h-full'>
+              <img src={localpttsbg} alt="Local PTTS BG" className='object-cover h-full w-full' />
+            </div>
           </div>
-
         </section>
 
         <section className="join-community bg-[#74C3D7] p-[50px]">
