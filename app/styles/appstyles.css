@@ -652,6 +652,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 3;
 }
 
+.z-\[99\]{
+  z-index: 99;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1381,8 +1385,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     place-content: space-between;
   }
 
+  .lg\:place-items-start{
+    place-items: start;
+  }
+
   .lg\:place-items-center{
     place-items: center;
+  }
+
+  .lg\:items-start{
+    align-items: flex-start;
   }
 
   .lg\:items-center{
