@@ -7,7 +7,7 @@ import { CaretDownIcon, PhoneIcon, MessageIcon, FacebookIcon, TwitterIcon, MenuI
 type CustomNavLinkType = {
     to: To,
     name: string,
-    className: string
+    className?: string
 }
 
 const CustomNavLink = ({ to, name, className }: CustomNavLinkType) => {
@@ -23,34 +23,47 @@ const CustomNavLink = ({ to, name, className }: CustomNavLinkType) => {
     )
 }
 
+const CustomMobileNavLink = ({ to, name, className }: CustomNavLinkType) => {
+    return (
+        <NavLink
+            to={to}
+            className={({ isActive }) =>
+                isActive ? `mobile-link-is-active ${className}` : `mobile-link-is-not-active ${className}`
+            }
+        >
+            {name}
+        </NavLink>
+    )
+}
+
 const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Element => {
     return (
         <div className="mobile-nav-link-wrapper transition-all delay-75 ease-in-out -left-[999px] w-full">
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <p>Home</p>
+                <CustomMobileNavLink to="/" name="Home" />
                 <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
             </div>
 
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <p>Projects</p>
+                <CustomMobileNavLink to="/projects" name="Projects" />
                 <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
             </div>
 
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <p>Events</p>
+                <CustomMobileNavLink to="/events" name="Events" />
             </div>
 
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <p>News</p>
+                <CustomMobileNavLink to="/news" name="News" />
             </div>
 
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <p>Pages</p>
+                <CustomMobileNavLink to="/pages" name="Pages" />
                 <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />
             </div>
 
             <div className="flex items-center justify-between">
-                <p>Contact</p>
+                <CustomMobileNavLink to="/contact-us" name="Contact Us" />
             </div>
         </div>
     )
@@ -95,7 +108,7 @@ export const NavigationBar = (): JSX.Element => {
         <>
             <div className="fixed w-full top-0 z-[1]">
                 <div className="mobile-nav-wrapper">
-                    <h1 className="font-nanum-pen font-bold text-4xl text-white">PTTS</h1>
+                    <Link to="/" className="font-nanum-pen font-bold text-4xl text-white">PTTS</Link>
                     <MenuIcon onClick={handleShowMobileNavLink} className="menu-icon" />
                 </div>
 
