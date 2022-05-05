@@ -81,7 +81,7 @@ const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Eleme
 
 const TopNavigationBar = (): JSX.Element => {
     return (
-        <div className="bg-[#18af7a] flex justify-between w-full px-8 min-h-[50px] md:grid md:py-5 md:place-content-center md:gap-y-6 lg:flex lg:py-0 lg:gap-y-0">
+        <div className="bg-[#007a4f] flex justify-between w-full px-8 min-h-[50px] md:grid md:py-5 md:place-content-center md:gap-y-6 lg:flex lg:py-0 lg:gap-y-0">
             <div className="flex items-center gap-x-4 text-white flex-1">
                 <p className="flex items-center gap-x-2 text-white">
                     <PhoneIcon className="w-4 h-4" />
@@ -134,9 +134,9 @@ export const NavigationBar = (): JSX.Element => {
                 <div className="hidden md:flex">
                     <TopNavigationBar />
                 </div>
-                <div className="min-h-[100px] flex items-center justify-between md:px-4 bg-[#18af7a] border-b-2 border-[#ffd800] text-white">
+                <div className="min-h-[100px] flex items-center justify-between md:px-4 bg-[#fff] border-b-2 border-[#ffd800] text-[#18af7a]">
                     <div className="logo">
-                        <Link to="/" className="font-nanum-pen font-bold md:text-[20px] lg:text-[40px] text-white">PleaseTalkToSomebody</Link>
+                        <Link to="/" className="font-nanum-pen font-bold md:text-[20px] lg:text-[40px] text-[#353535]">PleaseTalkToSomebody</Link>
                     </div>
 
                     <div className="flex items-center gap-x-4">

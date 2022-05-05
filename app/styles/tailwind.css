@@ -43,19 +43,19 @@
     }
 
     .link-is-active {
-        @apply text-[#ffd800] rounded-full text-[18px] p-3 font-bold ease-in duration-300;
+        @apply text-[#18af7a] rounded-full text-[18px] p-3 font-bold ease-in duration-300;
     }
 
     .link-is-active:hover {
-        @apply text-white;
+        @apply text-[#18af7a];
     }
 
     .link-is-not-active {
-        @apply p-3 text-white tracking-wide text-[18px] font-semibold ease-in duration-300;
+        @apply p-3 text-[#252525] tracking-wide text-[18px] font-semibold ease-in duration-300;
     }
 
     .link-is-not-active:hover {
-        @apply text-[#ffd800] border-b-[3px] pb-0 border-b-[#ffd800] rounded-none;
+        @apply text-[#18af7a] border-b-[3px] pb-0 border-b-[#18af7a] rounded-none;
     }
 
     .hero-section {
