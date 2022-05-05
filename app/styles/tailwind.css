@@ -43,11 +43,11 @@
     }
 
     .link-is-active {
-        @apply text-[#18af7a] rounded-full text-[18px] p-3 font-bold ease-in duration-300;
+        @apply text-[#18af7a] border border-[#18af7a] rounded-full text-[18px] p-3 font-bold ease-in transition-all;
     }
 
     .link-is-active:hover {
-        @apply text-[#18af7a];
+        @apply text-[#18af7a] border-0 border-b rounded-none transition-all ease-in;
     }
 
     .link-is-not-active {

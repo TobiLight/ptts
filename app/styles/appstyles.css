@@ -568,18 +568,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .link-is-active{
   border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(24 175 122 / var(--tw-border-opacity));
   padding: 0.75rem;
   font-size: 18px;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(24 175 122 / var(--tw-text-opacity));
-  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .link-is-active:hover{
+  border-radius: 0px;
+  border-width: 0px;
+  border-bottom-width: 1px;
   --tw-text-opacity: 1;
   color: rgb(24 175 122 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .link-is-not-active{
