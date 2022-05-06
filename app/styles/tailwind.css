@@ -30,7 +30,7 @@
     }
 
     .appointment-link {
-        @apply px-4 py-2 text-white h-full flex items-center bg-[#005e76];
+        @apply px-4 py-2 text-gray-600 font-semibold h-full flex items-center bg-[#ffd800];
         /* "to left" / "to right" - affects initial color */
         /* background: linear-gradient(to left, #88de32 50%, #272925 50%) right; */
         background-size: 200%;
@@ -40,22 +40,23 @@
     .appointment-link:hover {
         background-position: left;
         color: white;
+        @apply bg-[#18af7a];
     }
 
     .link-is-active {
-        @apply text-[#18af7a] border border-[#18af7a] rounded-full text-[18px] p-3 font-bold ease-in transition-all;
+        @apply flex items-center text-[#18af7a] border-[#18af7a] text-[18px] p-3 font-bold ease-in transition-all;
     }
 
     .link-is-active:hover {
-        @apply text-[#18af7a] border-0 border-b rounded-none transition-all ease-in;
+        @apply text-[#ffd800] rounded-none transition-all ease-in;
     }
 
     .link-is-not-active {
-        @apply p-3 text-[#252525] tracking-wide text-[18px] font-semibold ease-in duration-300;
+        @apply flex items-center text-[#252525] tracking-wide text-[18px] font-semibold ease-in duration-300;
     }
 
     .link-is-not-active:hover {
-        @apply text-[#18af7a] border-b-[3px] pb-0 border-b-[#18af7a] rounded-none;
+        @apply text-[#18af7a] pb-0 rounded-none;
     }
 
     .hero-section {
@@ -65,6 +66,14 @@
     .hero-bg {
         background-image: url('../images/hero-bg.jpg');
         @apply w-full h-[inherit] object-cover
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    .menu:hover .sub-menu {
+        display: flex;
     }
 
 }
