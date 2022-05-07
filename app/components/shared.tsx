@@ -134,7 +134,7 @@ export const NavigationBar = (): JSX.Element => {
                 </div>
                 <div className="min-h-[70px] flex justify-between md:px-4 bg-[#fff] text-[#18af7a]">
                     <div className="logo flex">
-                        <Link to="/" className="flex items-center font-nanum-pen font-bold md:text-[20px] lg:text-[40px] text-[#353535]">PleaseTalkToSomebody</Link>
+                        <Link to="/" className="flex items-center font-nanum-pen font-bold md:text-[20px] lg:text-[30px] text-[#353535]">PleaseTalkToSomebody</Link>
                     </div>
 
                     <div className="flex gap-x-[40px]">
