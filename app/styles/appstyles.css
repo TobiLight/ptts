@@ -843,6 +843,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 400px;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .min-h-\[50px\]{
   min-height: 50px;
 }
@@ -889,6 +893,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-10\/12{
   width: 83.333333%;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .max-w-\[130px\]{

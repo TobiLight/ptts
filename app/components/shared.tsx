@@ -3,6 +3,7 @@ import { useState } from "react"
 import type { MobileNavigationBarType } from "~/utils/types"
 import type { To } from "history"
 import { CaretUpIcon, CaretDownIcon, PhoneIcon, MessageIcon, FacebookIcon, TwitterIcon, MenuIcon, CartIcon } from "./icons"
+import logo from "~/../public/images/logopng.jpeg"
 
 type CustomNavLinkType = {
     to: To,
@@ -127,7 +128,9 @@ export const NavigationBar = (): JSX.Element => {
         <>
             <div className="fixed w-full top-0 z-[1]">
                 <div className="mobile-nav-wrapper">
-                    <Link to="/" className="font-nanum-pen font-bold text-4xl text-white">PTTS</Link>
+                    <Link to="/" className="font-nanum-pen font-bold text-4xl text-white">
+                        <div className="flex items-center font-nanum-pen font-bold md:text-[20px] lg:text-[30px] text-[#353535]"><img src={logo} alt="Please Talk To Somebody" className="w-12 h-12" /></div>
+                    </Link>
                     <div className="flex gap-x-3 items-center">
                         <MenuIcon onClick={handleShowMobileNavLink} className="menu-icon" />
                         <div className="flex gap-x-3">
@@ -150,7 +153,9 @@ export const NavigationBar = (): JSX.Element => {
                 </div>
                 <div className="min-h-[70px] flex justify-between md:px-4 bg-[#fff] text-[#18af7a]">
                     <div className="logo flex">
-                        <Link to="/" className="flex items-center font-nanum-pen font-bold md:text-[20px] lg:text-[30px] text-[#353535]">PleaseTalkToSomebody</Link>
+                        <div className="flex items-center font-nanum-pen font-bold md:text-[20px] lg:text-[30px] text-[#353535]">
+                            <img src={logo} alt="Please Talk To Somebody" className="w-12 h-12" />
+                        </div>
                     </div>
 
                     <div className="flex gap-x-[40px]">
