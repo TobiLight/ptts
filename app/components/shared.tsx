@@ -1,80 +1,77 @@
-import { NavLink, Link } from "@remix-run/react"
-import { useState } from "react"
+import { NavLink, Link, useLocation } from "@remix-run/react"
+import { useEffect, useState } from "react"
 import type { MobileNavigationBarType } from "~/utils/types"
 import type { To } from "history"
 import { CaretUpIcon, CaretDownIcon, PhoneIcon, MessageIcon, FacebookIcon, TwitterIcon, MenuIcon, CartIcon } from "./icons"
 import logo from "~/../public/images/logopng.jpeg"
 
-type CustomNavLinkType = {
-    to: To,
-    name: string,
-    className?: string
-    icon?: JSX.Element
-}
+const CustomNavLink = ({ to, ...rest }: Omit<Parameters<typeof Link>['0'], 'to'> & { to: string }) => {
+    const location = useLocation()
+    const isSelected =
+        to === location.pathname || location.pathname.startsWith(`/${to}`)
 
-const CustomNavLink = ({ to, name, className }: CustomNavLinkType) => {
     return (
-        <NavLink
-            prefetch="render"
+        <Link
+            prefetch="intent"
+            className={isSelected ? 'link-is-active' : 'nav-link'}
             to={to}
-            className={({ isActive }) =>
-                isActive ? `link-is-active ${className}` : `link-is-not-active ${className}`
-            }
+            {...rest}
         >
-            {name}
-        </NavLink>
+        </Link>
     )
 }
 
-const CustomMobileNavLink = ({ to, name, className, icon }: CustomNavLinkType) => {
+const CustomMobileNavLink = ({ to, ...rest }: Omit<Parameters<typeof Link>['0'], 'to'> & { to: string }) => {
+    const location = useLocation()
+    const isSelected =
+        to === location.pathname || location.pathname.startsWith(`/${to}`)
+
     return (
-        <NavLink
+        <Link
+            prefetch="intent"
+            className={isSelected ? 'm-link-is-active' : ''}
             to={to}
-            className={({ isActive }) =>
-                isActive ? `mobile-link-is-active ${className}` : `mobile-link-is-not-active ${className}`
-            }
+            {...rest}
         >
-            {name}
-            {icon}
-        </NavLink>
+        </Link>
     )
 }
 
 const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Element => {
     const [displayPages, setDisplayPages] = useState<boolean>(false)
     return (
-        <div className="md:hidden mobile-nav-link-wrapper transition-all delay-75 ease-in-out -left-[999px] w-full">
+        <div className="mobile-side-nav hide md:hidden mobile-nav-link-wrapper transition-all delay-75 ease-in-out -left-[999px] w-full">
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <CustomMobileNavLink to="/" name="Home" />
+                <CustomMobileNavLink to="/">Home</CustomMobileNavLink>
                 {/* <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" /> */}
             </div>
 
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <CustomMobileNavLink to="/events" name="Events" />
+                <CustomMobileNavLink to="/events">Events</CustomMobileNavLink>
             </div>
 
             <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
-                <CustomMobileNavLink to="/chapters" name="Chapters" />
+                <CustomMobileNavLink to="/chapters">Chapters</CustomMobileNavLink>
             </div>
 
             <div onClick={() => {
                 setDisplayPages(!displayPages)
             }} className="cursor-pointer pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
                 <div className="flex items-center justify-between">
-                    <CustomMobileNavLink to="/pages" name="Pages" />
+                    <div>Pages</div>
                     {displayPages ? <CaretUpIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" /> : <CaretDownIcon className="w-6 h-6 text-[#fad90e] cursor-pointer" />}
                 </div>
                 <div className={displayPages ? `bg-white p-3 mt-[10px] rounded-sm` : `hidden`}>
                     <div className="px-6 grid gap-y-4">
-                        <CustomMobileNavLink to="/pages/about-us" className="pb-3 border-b text-gray-600 text-sm" name="About Us" />
-                        <CustomMobileNavLink to="/pages/blog" className="pb-3 border-b text-gray-600 text-sm" name="Blog" />
-                        <CustomMobileNavLink to="/pages/shop" className="pb-3 text-gray-600 text-sm" name="Shop" />
+                        <CustomMobileNavLink to="/pages/about-us" className="pb-3 border-b text-gray-600 text-sm">About Us</CustomMobileNavLink>
+                        <CustomMobileNavLink to="/pages/blog" className="pb-3 border-b text-gray-600 text-sm">Blog</CustomMobileNavLink>
+                        <CustomMobileNavLink to="/pages/shop" className="pb-3 text-gray-600 text-sm">Shop</CustomMobileNavLink>
                     </div>
                 </div>
             </div>
 
             <div className="flex items-center justify-between pb-2 border-b-[#fff] text-[18px] tracking-wider">
-                <CustomMobileNavLink to="/contact-us" name="Contact Us" />
+                <CustomMobileNavLink to="/contact-us">Contact Us</CustomMobileNavLink>
             </div>
 
             {/* <div className="flex items-center justify-between text-[18px] tracking-wider">
@@ -134,7 +131,7 @@ export const NavigationBar = (): JSX.Element => {
                     <div className="flex gap-x-3 items-center">
                         <MenuIcon onClick={handleShowMobileNavLink} className="menu-icon" />
                         <div className="flex gap-x-3">
-                            <CustomMobileNavLink to="/shop/cart" name="" icon={<CartIcon className="w-6 h-6 text-white hover:text-[#ffd800] transition-all ease-in" />} />
+                            <CustomMobileNavLink to="/shop/cart"><CartIcon className="w-6 h-6 text-white hover:text-[#ffd800] transition-all ease-in" /></CustomMobileNavLink>
                         </div>
                     </div>
                 </div>
@@ -151,27 +148,27 @@ export const NavigationBar = (): JSX.Element => {
                 <div className="hidden md:flex">
                     <TopNavigationBar />
                 </div>
-                <div className="min-h-[70px] flex justify-between md:px-4 bg-[#fff] text-[#18af7a]">
+                <div className="min-h-[70px] flex justify-between md:px-4 bg-[#fff]">
                     <div className="logo flex">
                         <div className="flex items-center font-nanum-pen font-bold md:text-[20px] lg:text-[30px] text-[#353535]">
                             <img src={logo} alt="Please Talk To Somebody" className="w-12 h-12" />
                         </div>
                     </div>
 
-                    <div className="flex gap-x-[40px]">
-                        <CustomNavLink to='/' name="Home" className="text-[14px] lg:text-[16px]" />
-                        <CustomNavLink to='/events' name="Events" className="text-[14px] lg:text-[16px]" />
-                        <CustomNavLink to='/chapters' name="Chapters" className="text-[14px] lg:text-[16px]" />
+                    <div className="flex gap-x-[40px] place-items-center">
+                        <CustomNavLink to='/'>Home</CustomNavLink>
+                        <CustomNavLink to='/events'>Events</CustomNavLink>
+                        <CustomNavLink to='/chapters'>Chapters</CustomNavLink>
 
-                        <div className="grid menu overflow-hidden">
-                            <CustomNavLink to='/pages' name="Pages" className="text-[14px] lg:text-[16px]" />
-                            <div className="sub-menu h-[80px] z-[8] bg-[#fff] text-[#18af7a] bottom-[-79px] drop-shadow-lg w-[305px] absolute right-[10px] p-3 justify-between gap-x-10 items-center px-8 rounded-bl rounded-br">
-                                <CustomNavLink to='/pages/about-us' name="About Us" className="text-[14px] lg:text-[16px]" />
-                                <CustomNavLink to='/pages/blog' name="Blog" className="text-[14px] lg:text-[16px]" />
-                                <CustomNavLink to='/pages/shop' name="Shop" className="text-[14px] lg:text-[16px]" />
+                        <div className="h-[100%] grid menu overflow-hidden">
+                            <div className="h-[100%] flex place-items-center cursor-pointer nav-link">Pages</div>
+                            <div className="sub-menu h-[80px] z-[8] bg-[#fff] text-[#18af7a] bottom-[-70px] drop-shadow-lg w-[305px] absolute right-[10px] p-3 justify-between gap-x-10 items-center px-8 rounded-bl rounded-br">
+                                <CustomNavLink to='/pages/about-us'>About Us</CustomNavLink>
+                                <CustomNavLink to='/pages/blog'>Blog</CustomNavLink>
+                                <CustomNavLink to='/pages/shop'>Shop</CustomNavLink>
                             </div>
                         </div>
-                        <CustomNavLink to='/contact-us' name="Contact" className="text-[14px] lg:text-[16px]" />
+                        <CustomNavLink to='/contact-us'>Contact</CustomNavLink>
                     </div>
 
                 </div>

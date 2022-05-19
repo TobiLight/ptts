@@ -43,12 +43,24 @@
         @apply bg-[#18af7a];
     }
 
+    .m-link-is-active {
+        @apply flex items-center text-[#fff] border-[#18af7a] text-[18px] p-3 font-bold ease-in transition-all;
+    }
+
+    .m-link-is-active:hover {
+        @apply text-[#ffd800] rounded-none transition-all ease-in;
+    }
+
     .link-is-active {
         @apply flex items-center text-[#18af7a] border-[#18af7a] text-[18px] p-3 font-bold ease-in transition-all;
     }
 
     .link-is-active:hover {
         @apply text-[#ffd800] rounded-none transition-all ease-in;
+    }
+
+    .nav-link:hover {
+        @apply text-[#ffd800] transition-all ease-in;
     }
 
     .link-is-not-active {
