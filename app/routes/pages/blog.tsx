@@ -5,7 +5,7 @@ import summercode from "../../../public/images/summer-code.jpeg"
 
 export default function Blog(): JSX.Element {
     return (
-        <main className="pt-[80px] md:pt-0 min-h-screen h-full">
+        <main className="pt-[120px] min-h-screen h-full">
             <PageBanner text="Blog" />
 
             <section>

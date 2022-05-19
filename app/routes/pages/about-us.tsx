@@ -2,7 +2,7 @@ import { PageBanner } from "~/components/page-banner";
 
 export default function AboutUs(): JSX.Element {
     return (
-        <main className="pt-[80px] md:pt-0 min-h-screen h-full">
+        <main className="pt-[120px] min-h-screen h-full">
             <PageBanner text="About Us" />
 
             <div className="grid md:gap-y-8 md:max-w-3xl lg:max-w-4xl mx-auto md:mt-10 md:mb-14">

@@ -1,13 +1,14 @@
-import { NavLink, Link, NavLinkProps } from "@remix-run/react"
+import { NavLink, Link } from "@remix-run/react"
 import { useState } from "react"
 import type { MobileNavigationBarType } from "~/utils/types"
 import type { To } from "history"
-import CaretUpIcon, { CaretDownIcon, PhoneIcon, MessageIcon, FacebookIcon, TwitterIcon, MenuIcon } from "./icons"
+import { CaretUpIcon, CaretDownIcon, PhoneIcon, MessageIcon, FacebookIcon, TwitterIcon, MenuIcon, CartIcon } from "./icons"
 
 type CustomNavLinkType = {
     to: To,
     name: string,
     className?: string
+    icon?: JSX.Element
 }
 
 const CustomNavLink = ({ to, name, className }: CustomNavLinkType) => {
@@ -24,7 +25,7 @@ const CustomNavLink = ({ to, name, className }: CustomNavLinkType) => {
     )
 }
 
-const CustomMobileNavLink = ({ to, name, className }: CustomNavLinkType) => {
+const CustomMobileNavLink = ({ to, name, className, icon }: CustomNavLinkType) => {
     return (
         <NavLink
             to={to}
@@ -33,6 +34,7 @@ const CustomMobileNavLink = ({ to, name, className }: CustomNavLinkType) => {
             }
         >
             {name}
+            {icon}
         </NavLink>
     )
 }
@@ -70,9 +72,16 @@ const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Eleme
                 </div>
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between pb-2 border-b-[#fff] text-[18px] tracking-wider">
                 <CustomMobileNavLink to="/contact-us" name="Contact Us" />
             </div>
+
+            {/* <div className="flex items-center justify-between text-[18px] tracking-wider">
+                <div className="flex gap-x-3">
+                    <CustomMobileNavLink to="/shop/cart" name="" icon={<CartIcon className="w-8 h-8 text-white" />} />
+                </div>
+
+            </div> */}
         </div>
     )
 }
@@ -94,7 +103,9 @@ const TopNavigationBar = (): JSX.Element => {
             <div className="flex items-center gap-x-8 md:place-content-center lg:place-content-between">
                 <div className="flex items-center gap-x-4 text-white">
                     <FacebookIcon className="w-4 h-4" />
-                    <TwitterIcon className="w-4 h-4" />
+                    <a href="https://twitter.com/PlsTalk2Sombody">
+                        <TwitterIcon className="w-4 h-4" />
+                    </a>
                 </div>
                 <button className="appointment-link">Donate now</button>
             </div>
@@ -117,7 +128,12 @@ export const NavigationBar = (): JSX.Element => {
             <div className="fixed w-full top-0 z-[1]">
                 <div className="mobile-nav-wrapper">
                     <Link to="/" className="font-nanum-pen font-bold text-4xl text-white">PTTS</Link>
-                    <MenuIcon onClick={handleShowMobileNavLink} className="menu-icon" />
+                    <div className="flex gap-x-3 items-center">
+                        <MenuIcon onClick={handleShowMobileNavLink} className="menu-icon" />
+                        <div className="flex gap-x-3">
+                            <CustomMobileNavLink to="/shop/cart" name="" icon={<CartIcon className="w-6 h-6 text-white hover:text-[#ffd800] transition-all ease-in" />} />
+                        </div>
+                    </div>
                 </div>
 
                 {showMobileNavLink &&
@@ -128,7 +144,7 @@ export const NavigationBar = (): JSX.Element => {
             </div>
 
 
-            <div className="hidden md:flex flex-col relative">
+            <div className="hidden md:flex flex-col fixed top-0 z-[2] w-full drop-shadow-lg">
                 <div className="hidden md:flex">
                     <TopNavigationBar />
                 </div>

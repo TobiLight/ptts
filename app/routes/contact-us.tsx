@@ -3,7 +3,7 @@ import { PageBanner } from "~/components/page-banner";
 
 export default function ContactUs(): JSX.Element {
     return (
-        <div className="pt-[80px] md:pt-0 min-h-screen h-full">
+        <div className="pt-[120px] min-h-screen h-full">
             <PageBanner text="Contact Us" />
             <div className="flex flex-col-reverse md:flex-row w-full h-full bg-[#f1f1ef] md:border-t-2 border-[#ffd800]">
                 <div className="w-full md:w-[40%] px-5 py-8 md:my-20 md:mx-6 bg-[#353434] md:bg-[#18af7a] grid gap-y-5 text-center lg:place-items-start md:text-left h-[max-content]">

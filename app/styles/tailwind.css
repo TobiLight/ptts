@@ -10,7 +10,7 @@
     }
 
     .mobile-nav-wrapper {
-        @apply bg-[#18af7a] min-h-[80px] p-2 flex flex-row items-center justify-between border-b-2 border-[#ffd800];
+        @apply bg-[#18af7a] min-h-[80px] py-2 px-4 flex flex-row items-center justify-between border-b-2 border-[#ffd800];
     }
 
     .menu-icon {
@@ -74,6 +74,26 @@
 
     .menu:hover .sub-menu {
         display: flex;
+    }
+
+    .scrollbar::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    .scrollbar::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #f7f4ed;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: #e0cbcb;
+        border-radius: 100vh;
+        border: 3px solid #f6f7ed;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #c0a0b9;
     }
 
 }
