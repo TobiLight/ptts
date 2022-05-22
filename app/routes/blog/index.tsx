@@ -1,7 +1,7 @@
 import { Form } from "@remix-run/react";
 import { BlogItem } from "~/components/blog-item";
 import { PageBanner } from "~/components/page-banner";
-import summercode from "../../../public/images/summer-code.jpeg"
+import summercode from "~/../public/images/summer-code.jpeg"
 
 export default function Blog(): JSX.Element {
     return (

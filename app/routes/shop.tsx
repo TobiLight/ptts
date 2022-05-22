@@ -3,9 +3,9 @@ import { Form, useActionData, useFetcher, useLoaderData } from "@remix-run/react
 import { useEffect, useState } from "react";
 import { EyeIcon, EyeInvisibleIcon } from "~/components/icons";
 import { PageBanner } from "~/components/page-banner";
-import { ShopItem } from "~/components/shop";
-import pttsmerch1 from "../../../public/images/ptts-merch1.jpeg"
-import pttsmerch2 from "../../../public/images/ptts-merch2.jpeg"
+import { ShopItem } from "~/components/shopitem";
+import pttsmerch1 from "~/../public/images/ptts-merch1.jpeg"
+import pttsmerch2 from "~/../public/images/ptts-merch2.jpeg"
 
 type LoaderDataType = {
     id: number,
@@ -33,19 +33,21 @@ export const loader: LoaderFunction = async ({ request }) => {
 
 export const action: ActionFunction = async ({ request }) => {
     const form = request.formData()
-    const increase = (await form).get('increase')
-    const decrease = (await form).get('decrease')
+    const increment = (await form).get('increment')
+    const decrement = (await form).get('decrement')
     const cartVisibility = (await form).get('cart')
 
-    if (cartVisibility === 'show') {
-        return json({
-            showCart: true
-        }, { status: 200 })
+    // if (cartVisibility === 'show') {
+    //     return json({
+    //         showCart: true
+    //     }, { status: 200 })
+    // }
+    console.log(increment);
+    if (increment !== null) {
+        return json(increment, { status: 200 })
     }
 
-    return json({
-        showCart: false
-    }, { status: 200 })
+    return json({ data: null }, { status: 400 })
 }
 
 export default function Shop(): JSX.Element {

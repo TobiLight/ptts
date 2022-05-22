@@ -54,6 +54,10 @@ const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Eleme
                 <CustomMobileNavLink to="/chapters">Chapters</CustomMobileNavLink>
             </div>
 
+            <div className="flex items-center justify-between pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
+                <CustomMobileNavLink to="/gallery">Gallery</CustomMobileNavLink>
+            </div>
+
             <div onClick={() => {
                 setDisplayPages(!displayPages)
             }} className="cursor-pointer pb-2 border-b border-b-[#fff] text-[18px] tracking-wider">
@@ -63,9 +67,9 @@ const MobileNavigationBar = ({ handleShow }: MobileNavigationBarType): JSX.Eleme
                 </div>
                 <div className={displayPages ? `bg-white p-3 mt-[10px] rounded-sm` : `hidden`}>
                     <div className="px-6 grid gap-y-4">
-                        <CustomMobileNavLink to="/pages/about-us" className="pb-3 border-b text-gray-600 text-sm">About Us</CustomMobileNavLink>
-                        <CustomMobileNavLink to="/pages/blog" className="pb-3 border-b text-gray-600 text-sm">Blog</CustomMobileNavLink>
-                        <CustomMobileNavLink to="/pages/shop" className="pb-3 text-gray-600 text-sm">Shop</CustomMobileNavLink>
+                        <CustomMobileNavLink to="/about-us" className="pb-3 border-b text-gray-600 text-sm">About Us</CustomMobileNavLink>
+                        <CustomMobileNavLink to="/blog" className="pb-3 border-b text-gray-600 text-sm">Blog</CustomMobileNavLink>
+                        <CustomMobileNavLink to="/shop" className="pb-3 text-gray-600 text-sm">Shop</CustomMobileNavLink>
                     </div>
                 </div>
             </div>
@@ -158,14 +162,15 @@ export const NavigationBar = (): JSX.Element => {
                     <div className="flex gap-x-[40px] place-items-center">
                         <CustomNavLink to='/'>Home</CustomNavLink>
                         <CustomNavLink to='/events'>Events</CustomNavLink>
+                        <CustomNavLink to='/gallery'>Gallery</CustomNavLink>
                         <CustomNavLink to='/chapters'>Chapters</CustomNavLink>
 
                         <div className="h-[100%] grid menu overflow-hidden">
                             <div className="h-[100%] flex place-items-center cursor-pointer nav-link">Pages</div>
                             <div className="sub-menu h-[80px] z-[8] bg-[#fff] text-[#18af7a] bottom-[-70px] drop-shadow-lg w-[305px] absolute right-[10px] p-3 justify-between gap-x-10 items-center px-8 rounded-bl rounded-br">
-                                <CustomNavLink to='/pages/about-us'>About Us</CustomNavLink>
-                                <CustomNavLink to='/pages/blog'>Blog</CustomNavLink>
-                                <CustomNavLink to='/pages/shop'>Shop</CustomNavLink>
+                                <CustomNavLink to='/about-us'>About Us</CustomNavLink>
+                                <CustomNavLink to='/blog'>Blog</CustomNavLink>
+                                <CustomNavLink to='/shop'>Shop</CustomNavLink>
                             </div>
                         </div>
                         <CustomNavLink to='/contact-us'>Contact</CustomNavLink>
